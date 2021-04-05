@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACCOMIS | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar- Header Menu Item -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Setting</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Questioneers</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Reports</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Downloads</a>
+      </li>
+      <li class="nav-item">
+        <a href="login.html" class="nav-link">
+        Sign Out
+        </a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="ACCOMIS" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">ACCOMIS</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div> -->
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Main Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Admin Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>M&E Dashboard</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        
+          <li class="nav-header">QUESTIONEERS</li>
+          <li class="nav-item">
+            <a href="pages/calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                CBO/CAT
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Client Exit
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+                Remedial Feedback
+                
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="pages/mailbox/mailbox.html" class="nav-link">
+              <i class="fa fa-book"></i>
+              <p>CBO Monthly Minutes</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/mailbox/compose.html" class="nav-link">
+              <i class="fa fa-book"></i>
+              <p>SPO Monthly Minutes</p>
+            </a>
+          </li>
+        
+       
+          <li class="nav-header">REPORTS</li>
+          
+          <li class="nav-item">
+            <a href="pages/calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+               List of CBO/CAT
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+              <i class="nav-icon fa fa-image"></i>
+              <p>
+                 Exit Questioneers
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-envelope"></i>
+              <p>
+                Feedbacks
+                
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="pages/mailbox/mailbox.html" class="nav-link">
+              <i class="fa fa-book"></i>
+              <p>CBO Monthly Minutes</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/mailbox/compose.html" class="nav-link">
+              <i class="fa fa-book"></i>
+              <p>SPO Monthly Minutes</p>
+            </a>
+          </li>
+          <li class="nav-header">HEALTH FACILITIES</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-eye"></i>
+              <p>View</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-plus"></i>
+              <p>
+                Add
+              
+              </p>
+            </a>
+          
+          </li>
+         
+          <li class="nav-header">SETTINGS</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p class="text">Uploads</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>State</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>LGA</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>Wards</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>SPO</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>CBO</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>User</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>Sign Out</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Client Exit Questioneers</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Client Exit</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- SELECT2 EXAMPLE -->
+        <div class="card card-info">
+          <div class="card-header">
+            <h3 class="card-title">Respondant Questioneers</h3>
+
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                  <p>Can I Proceed With the Interview?</p>
+                <div class="form-group clearfix">                   
+                    <div class="icheck-primary d-inline">
+                      <input type="radio" id="radioPrimary2" name="r1">
+                      <label for="radioPrimary2">
+                          YES
+                      </label>
+                      
+                    </div>
+                   
+                  </div>
+                  <div class="form-group clearfix">                   
+                    <div class="icheck-danger d-inline">
+                      <input type="radio" id="radiodanger3" name="r2">
+                      <label for="radiodanger3">
+                          NO
+                      </label>
+                    </div>
+                   
+                  </div>
+              </div>    
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Name of Respondant</label>
+                  <input type="text" name="text" class="form-control" placeholder="">
+                   
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Child's Name (Where Applicable)</label>
+                  <input type="text" name="text" class="form-control" placeholder="">
+                   
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>Respondant Category</label>
+                  <select class="form-control select2" style="width: 100%;">
+                    <option selected="selected">Select Category</option>
+                    <option>Male 18-25</option>
+                    <option>Male 26-45</option>
+                    <option>Male 45 and Above</option>
+                    <option>Female not Pregnant</option>
+                    <option>Female Pregnant</option>
+                    <option>Female with under 5 child/children</option>
+                    <option>Female with 6-17 years child/children</option>
+                    <option>Female 18-25</option>
+                    <option>Female 26-45</option>
+                    <option>Female 45 and Above</option>                   
+                  </select>                   
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Address(Detailed Address):</label>
+                  <input type="text" name="text" class="form-control" placeholder="" >
+                   
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Telephone Number</label>
+                  <input type="text" name="text" class="form-control" placeholder="" >
+                   
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Name of Health Facility where interview is conducted</label>
+                  <input type="text" name="text" class="form-control" placeholder="" >
+                   
+                </div>
+              </div> 
+              
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Occupation</label>
+                  <select class="form-control select2" style="width: 100%;">
+                    <option selected="selected">Select Category</option>
+                    <option>Government/Civil Servant</option>
+                    <option>Professional Worker</option>
+                    <option>Self-Employed Trader</option>
+                    <option>Business Man/Woman</option>
+                    <option>Farmer/Agric Worker</option>
+                    <option>Artisan</option>
+                    <option>Religious Leader/Missionary</option>
+                    <option>Youth Corp Member</option>
+                    <option>Student</option>
+                    <option>Other (Specify...)</option>                   
+                  </select><br>
+                  <Label>Other</Label>
+                  <input type="text" name="" class="form-control" placeholder="kindly specify">                   
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Educational Background</label>
+                  <select class="form-control select2" style="width: 100%;">
+                    <option selected="selected">Select Category</option>
+                    <option>No Formal Education</option>
+                    <option>Primary Education (Uncompleted)</option>
+                    <option>Primary Education (Completed)</option>
+                    <option>Primary Education (Uncompleted)</option>
+                    <option>Primary Education (Completed)</option>
+                    <option>Vocational School</option>
+                    <option>University/Polytechnic Uncompleted</option>
+                    <option>University/Polytechnic Completed</option>
+                    <option>Post Graduate Degree</option>
+                    <option>Other (Specify...)</option>                   
+                  </select><br>
+                  <Label>Other</Label>
+                  <input type="text" name="" class="form-control" placeholder="kindly specify">                   
+                </div>
+              </div>
+             <hr>
+            </div>
+            <div class="row"> 
+                <div class="col-md-12">
+                    <p style="text-align: center; font-size: large;">Question Section 1</p>
+                </div>              
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Which One you came for?</label>
+                        <select multiple="" class="form-control">
+                            <option>Maternal and Newborn Care</option>
+                            <option>Antenatal Care</option>
+                            <option>Malaria Services</option>
+                            <option>Don't Know</option>
+                            <option>Other (Specify)</option>
+                        </select><br>
+                        <Label>Other</Label>
+                        <input type="text" name="" class="form-control" placeholder="Kindly Specify"> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Which One you received?</label>
+                        <select multiple="" class="form-control">
+                            <option>Maternal and Newborn Care</option>
+                            <option>Antenatal Care</option>
+                            <option>Malaria Services</option>
+                            <option>Don't Know</option>
+                            <option>Other (Specify)</option>
+                        </select><br>
+                        <Label>Other</Label>
+                        <input type="text" name="" class="form-control" placeholder="Kindly Specify"> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Frequency of Visit within 3 Months?</label>
+                        <select multiple="" class="form-control">
+                            <option>Have not been to the facility in the last 3 Months</option>
+                            <option>0-2 Times</option>
+                            <option>0-5 Times</option>
+                            <option>3-5 Times</option>
+                            <option>6-10 Times</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="text-align: center; font-size: large;">Question Section 2</p>
+                </div> 
+                <div class="col-md-4">
+                    <p>Did You Receive LLIN?</p>
+                  <div class="form-group clearfix">                   
+                      <div class="icheck-primary d-inline">
+                        <input type="radio" id="radioPrimary4" name="r1">
+                        <label for="radioPrimary4">
+                            YES
+                        </label>
+                        
+                      </div>
+                     
+                    </div>
+                    <div class="form-group clearfix">                   
+                      <div class="icheck-danger d-inline">
+                        <input type="radio" id="radiodanger5" name="r2">
+                        <label for="radiodanger5">
+                            NO
+                        </label>
+                      </div>
+                     
+                    </div>
+                </div> 
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Where did you Receive the LLIN?</label>
+                        <select multiple="" class="form-control">
+                            <option>Facility (During 1st ANC Attendance)</option>
+                            <option>Facility (During 9 Months Immunization)</option>
+                            <option>Mass Campaign (Community)</option>
+                            <option>Others</option><br>
+                            <Label>Other</Label>
+                            <input type="text" name="" class="form-control" placeholder="Kindly Specify">
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>(If Response is YES) Frequency</label>
+                        <select multiple="" class="form-control">
+                            <option>Once</option>
+                            <option>Twice</option>
+                            <option>Three Times</option>
+                            <option>More than three times</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">                
+                <div class="col-md-4">
+                    <p>Did You Receive IPT (3 White Tablets)?</p>
+                  <div class="form-group clearfix">                   
+                      <div class="icheck-primary d-inline">
+                        <input type="radio" id="radioPrimary4" name="r1">
+                        <label for="radioPrimary4">
+                            YES
+                        </label>
+                        
+                      </div>
+                     
+                    </div>
+                    <div class="form-group clearfix">                   
+                      <div class="icheck-danger d-inline">
+                        <input type="radio" id="radiodanger5" name="r2">
+                        <label for="radiodanger5">
+                            NO
+                        </label>
+                      </div>
+                     
+                    </div>
+                </div> 
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Frequency of IPT Administration</label>
+                        <select multiple="" class="form-control">
+                            <option>After 13 Weeks (Quickening)</option>
+                            <option>Once Every</option>
+                            <option>Once Every 2 Months</option>
+                            <option>Once Every 3 Months</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p>Did You Swallow the (SP-Sulfadoxin-Pyrimethamine 3 White tabs)?</p>
+                  <div class="form-group clearfix">                   
+                      <div class="icheck-primary d-inline">
+                        <input type="radio" id="radioPrimary4" name="r1">
+                        <label for="radioPrimary4">
+                            YES
+                        </label>
+                        
+                      </div>
+                     
+                    </div>
+                    <div class="form-group clearfix">                   
+                      <div class="icheck-danger d-inline">
+                        <input type="radio" id="radiodanger5" name="r2">
+                        <label for="radiodanger5">
+                            NO
+                        </label>
+                      </div>
+                     
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Services (Show Question if Prv Q is NO)  </label>
+                        <select multiple="" class="form-control">
+                            <option>The Health worker did not ask me to swallow the drug in his/her presence</option>
+                            <option>I was asked to swallow the drug in the presence of the health worker but I declined</option>
+                            <option>Others</option><br>                            
+                            <input type="text" name="" class="form-control" placeholder="Kindly Specify">
+                        </select>
+                    </div>
+                </div> 
+                <div class="col-md-4">
+                    <label>Was your Child given Seasonal Malaria Chemoprevention (SMC)?</label>
+                  <div class="form-group clearfix">                   
+                      <div class="icheck-primary d-inline">
+                        <input type="radio" id="radioPrimary4" name="r1">
+                        <label for="radioPrimary4">
+                            YES
+                        </label>                        
+                      </div>
+                     
+                    </div>
+                    <div class="form-group clearfix">                   
+                      <div class="icheck-danger d-inline">
+                        <input type="radio" id="radiodanger5" name="r2">
+                        <label for="radiodanger5">
+                            NO
+                        </label>
+                      </div>
+                     
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>If Yes to Prv Qs: How old was the child when given?</label>
+                        <select multiple="" class="form-control">
+                            <option>3-12 Months</option>
+                            <option>13-24 Months</option>
+                            <option>25-36 months</option>
+                            <option>37-48 months</option>
+                            <option>49-59 months</option>
+                            <option>60 and Above</option>
+                            
+                        </select>
+                    </div>
+                </div> 
+                <div class="col-md-4">
+                    <label>Were You Tested for Malaria?</label>
+                  <div class="form-group clearfix">                   
+                      <div class="icheck-primary d-inline">
+                        <input type="radio" id="radioPrimary4" name="r1">
+                        <label for="radioPrimary4">
+                            YES
+                        </label>                        
+                      </div>
+                     
+                    </div>
+                    <div class="form-group clearfix">                   
+                      <div class="icheck-danger d-inline">
+                        <input type="radio" id="radiodanger5" name="r2">
+                        <label for="radiodanger5">
+                            NO
+                        </label>
+                      </div>                     
+                    </div>
+                    <div class="form-group clearfix">                   
+                        <div class="icheck-danger d-inline">
+                          <input type="radio" id="radiodanger5" name="r2">
+                          <label for="radiodanger5">
+                              NOT SURE
+                          </label>
+                        </div>                     
+                      </div>                    
+                      <input type="text" name="" class="form-control" placeholder="Why (If No to Above)">
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>If Yes to Prv Qs:When were you tested for Malaria?</label>
+                        <select multiple="" class="form-control">
+                            <option>First Antenatal Visit</option>
+                            <option>When I was Sick</option>
+                            <option>Don't Know</option>                                                       
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Were You given Arthemisinin-based-Combination Therapy</label>
+                        <select multiple="" class="form-control">
+                            <option>First Antenatal Visit</option>
+                            <option>When I was Sick</option>
+                            <option>Don't Know</option>                                                       
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4">                   
+                    <label>Were You given Arthemisinin-based-Combination  Therapy</label>
+                    <div class="form-group clearfix">                   
+                        <div class="icheck-primary d-inline">
+                          <input type="radio" id="radioPrimary4" name="r1">
+                          <label for="radioPrimary4">
+                              YES
+                          </label>                        
+                        </div>
+                       
+                      </div>
+                      <div class="form-group clearfix">                   
+                        <div class="icheck-danger d-inline">
+                          <input type="radio" id="radiodanger5" name="r2">
+                          <label for="radiodanger5">
+                              NO
+                          </label>
+                          <input type="text" name="" class="form-control" placeholder="If No, Specify Drug Received">
+                        </div>                     
+                    </div>               
+
+                </div>
+
+                <div class="col-md-4">                   
+                    <label>IF Yes to Prv Q, Did You Finish the Drug?</label>
+                    <div class="form-group clearfix">                   
+                        <div class="icheck-primary d-inline">
+                          <input type="radio" id="radioPrimary4" name="r1">
+                          <label for="radioPrimary4">
+                              YES
+                          </label> 
+                          <br>
+                          <input type="text" name="" class="form-control" placeholder="Kindly State Type of tablet, timing accuracy and adherance, 24 or 6 tablets 3 days">                       
+                        </div>
+                       
+                      </div>
+                      <div class="form-group clearfix">                   
+                        <div class="icheck-danger d-inline">
+                          <input type="radio" id="radiodanger5" name="r2">
+                          <label for="radiodanger5">
+                              NO
+                          </label>
+                          <input type="text" name="" class="form-control" placeholder="If No, Why?">
+                        </div>                     
+                    </div>                   
+                    
+
+                </div>               
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="text-align: center; font-size: large;">Question Section 4</p>
+                </div> 
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>How satisfied are you with the service(s) you received today?</label>
+                        <select multiple="" class="form-control">
+                            <option>Very dissatisfied</option>
+                            <option>Somewhat dissatisfied</option>
+                            <option>Neither dissatisfied nor satisfied</option>
+                            <option>Very Satisfied</option>  
+                            <option>Don't Know</option> 
+                        </select><br>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <p></p>
+                    <div class="form-group">
+                        <label>What is responsible for your choice above?</label>
+                        <select multiple="" class="form-control">
+                            <option>Poor Facility Worker Attitude</option>
+                            <option>Long Waiting Time</option>
+                            <option>Lack of Drugs</option>  
+                            <option>Shortage of Manpower/Personnel</option>
+                            <option>Others</option>                                                    
+                        </select>
+                        <input type="text" name="" class="form-control" placeholder="Kindly Specify">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <p></p>
+                    <div class="form-group">
+                        <label>If Satisfied, What might have helped you to be more satisfied with the service tou received today?</label>
+                        <textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <p></p>
+                    <div class="form-group">
+                        <label>If you could make at least one suggestion for improving services at this health facility, what would?</label>
+                        <textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
+                    </div>
+                </div>
+                
+            </div>      
+            
+              
+            <button class="btn btn-primary">Submit Client Exit</button>
+            <!-- /.row -->
+            
+          </div>
+          <!-- /.card-body -->
+          <div class="card-footer">
+            <!-- Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about
+            the plugin. -->
+          </div>
+        </div>
+        <!-- /.card -->
+
+       
+
+        <!-- SELECT2 EXAMPLE -->
+        <div class="card card-success">
+          <div class="card-header">
+            <h3 class="card-title">Client Exit Reports</h3>
+
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <table id="example1" class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>id</th>
+                <th>Date</th>                
+                <th>Health Facility</th>
+                <th>Service Rating</th>               
+                <th>Name of Respndant</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>001</td>
+                <td>10/04/2021</td>
+                <td>Apo PHC</td>                
+                <td><span class="badge bg-warning">Very dissatisfied</span></td>
+                <td>James Onuh</td>
+              </tr>
+              </tbody>              
+            <tfoot>
+                <tr>
+                <th>id</th>
+                <th>Date</th>                
+                <th>Health Facility</th>
+                <th>Service Rating</th>               
+                <th>Name of Respndant</th>
+                  </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!-- /.card-body -->
+         
+        </div>
+        
+        
+          <div class="card card-success">
+            <div class="card-header">
+              <h3 class="card-title">Admin & SPO View:</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                <th>id</th>
+                <th>Date</th>                
+                <th>Health Facility</th>
+                <th>Service Rating</th>               
+                <th>Name of CBO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>001</td>
+                <td>10/04/2021</td>
+                <td>Apo PHC</td>                
+                <td><span class="badge bg-warning">Very dissatisfied</span></td>
+                <td>CBO1</td>
+                  </tr>              
+                
+              <tfoot>
+                <tr>
+                    <th>id</th>
+                    <th>Date</th>                
+                    <th>Health Facility</th>
+                    <th>Service Rating</th>               
+                    <th>Name of CBO</th>
+                      </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.card-body -->
+           
+          </div>
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2021 <a href="http://houseofamaya.com.ng">House of Amaya</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<!-- AdminLTE App -->
+<script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true,
+        "autoWidth": false,
+      });
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
+
+  <!-- Button trigger modal -->
+
+<!-- CBO Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Client Exit Questioneers</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">        
+        <p>Minutes:</p>
+        <textarea name="" id="" cols="30" rows="3" class="form-control">text</textarea><br>
+        <p>Attached Report: <a href="#"><i class="fa fa-file-download"></i></a></p>
+        <p>Status: <span class="badge bg-success">Approved</span></p>
+        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button>
+        <!-- <button type="button" class="btn btn-danger">Delete</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ADMIN MODAL -->
+<div class="modal fade" id="exampleModalAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">SPO Monthly Minutes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <p>Name of SPO:</p>          
+          <p>State:</p>
+          <p>Minutes:</p>
+          <textarea name="" id="" cols="30" rows="3" class="form-control" >SPO Minutes</textarea><br>
+          <p>Attached Report: <a href="#"><i class="fa fa-file-download"></i></a></p>         
+          <p>Declaration:</p>
+          <select name="" id="" class="form-control">
+              <option value="">Approve</option>
+              <option value="">Query</option>
+          </select><br>
+          <p>Comments:</p>
+          <textarea name="" id="" cols="30" rows="2" class="form-control">Admin Comments</textarea>
+           
+          
+          
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Approve</button>
+          <button type="button" class="btn btn-danger">Query</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
